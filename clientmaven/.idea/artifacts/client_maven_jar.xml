@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="client-maven:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/client_maven_jar</output-path>
+    <root id="archive" name="client-maven.jar">
+      <element id="module-output" name="client-maven" />
+    </root>
+  </artifact>
+</component>

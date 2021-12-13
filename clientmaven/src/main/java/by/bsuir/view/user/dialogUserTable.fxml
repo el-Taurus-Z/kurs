@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.lang.String?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="522.0" prefWidth="600.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="by.bsuir.controller.user.DialogUsersController">
+  <children>
+    <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="440.0" prefWidth="562.0">
+      <bottom>
+        <HBox prefHeight="51.0" prefWidth="562.0">
+          <children>
+            <Button id="btnCansel" fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#actionSave" prefHeight="34.0" prefWidth="169.0" text="сохранить" textFill="BLACK">
+              <effect>
+                <Lighting>
+                  <bumpInput>
+                    <Shadow />
+                  </bumpInput>
+                  <light>
+                    <javafx.scene.effect.Light.Distant />
+                  </light>
+                </Lighting>
+              </effect>
+              <font>
+                <Font name="System Bold Italic" size="16.0" fx:id="x2" />
+              </font>
+              <HBox.margin>
+                <Insets left="190.0" top="8.0" />
+              </HBox.margin>
+            </Button>
+            <Button id="btnSave" fx:id="btnCansel" cancelButton="true" font="$x2" mnemonicParsing="false" onAction="#actionClose" prefHeight="34.0" prefWidth="132.0" text="отмена" textFill="BLACK">
+              <effect>
+                <Lighting>
+                  <bumpInput>
+                    <Shadow />
+                  </bumpInput>
+                  <light>
+                    <javafx.scene.effect.Light.Distant />
+                  </light>
+                </Lighting>
+              </effect>
+              <HBox.margin>
+                <Insets left="50.0" top="8.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+      </bottom>
+      <center>
+        <VBox prefHeight="200.0" prefWidth="100.0">
+          <children>
+            <TextField fx:id="textLogin" prefWidth="200.0">
+              <VBox.margin>
+                <Insets top="5.0" fx:id="x3" />
+              </VBox.margin>
+            </TextField>
+            <TextField fx:id="textPassword" prefWidth="200.0">
+              <VBox.margin>
+                <Insets top="20.0" fx:id="x1" />
+              </VBox.margin>
+            </TextField>
+            <TextField fx:id="textName" prefWidth="200.0" VBox.margin="$x1" />
+            <TextField fx:id="textSurname" prefWidth="200.0" VBox.margin="$x1" />
+            <TextField fx:id="textPhone" prefWidth="200.0" VBox.margin="$x1" />
+            <ChoiceBox fx:id="choiceStatus" prefWidth="169.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+              <VBox.margin>
+                <Insets top="40.0" />
+              </VBox.margin>
+            </ChoiceBox>
+          </children>
+        </VBox>
+      </center>
+      <left>
+        <VBox prefHeight="341.0" prefWidth="132.0">
+          <children>
+            <Label font="$x2" prefWidth="75.0" text="Логин" textFill="BLACK">
+              <VBox.margin>
+                <Insets top="10.0" />
+              </VBox.margin>
+            </Label>
+            <Label font="$x2" prefWidth="75.0" text="Пароль" textFill="BLACK">
+              <VBox.margin>
+                <Insets right="40.0" top="45.0" />
+              </VBox.margin>
+            </Label>
+            <Label font="$x2" text="Имя" textFill="BLACK">
+              <VBox.margin>
+                <Insets top="30.0" fx:id="x4" />
+              </VBox.margin>
+            </Label>
+            <Label font="$x2" text="Фамилия" textFill="BLACK">
+              <VBox.margin>
+                <Insets top="40.0" />
+              </VBox.margin>
+            </Label>
+            <Label font="$x2" text="Телефон" textFill="BLACK">
+              <VBox.margin>
+                <Insets top="35.0" />
+              </VBox.margin>
+            </Label>
+            <Label font="$x2" text="Статус" textFill="BLACK">
+              <VBox.margin>
+                <Insets top="50.0" />
+              </VBox.margin>
+            </Label>
+          </children>
+        </VBox>
+      </left>
+      <top>
+        <HBox prefHeight="43.0" prefWidth="562.0">
+          <children>
+            <Label text="Добавление пользователя">
+              <HBox.margin>
+                <Insets left="200.0" top="5.0" />
+              </HBox.margin>
+            </Label>
+          </children>
+        </HBox>
+      </top>
+    </BorderPane>
+  </children>
+  <effect>
+    <InnerShadow />
+  </effect>
+  <stylesheets>
+    <URL value="@../new_theme.css" />
+  </stylesheets>
+</AnchorPane>
